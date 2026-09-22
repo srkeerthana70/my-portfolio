@@ -58,19 +58,6 @@
     gap: 32px;
   }
 
-  .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .footer-left .footer-tagline {
-    max-width: 100%;
-  }
-
-  .footer-right {
-    text-align: center;
-  }
 }
 
 /* --- Tablets & Mobiles (<= 768px) --- */
