@@ -1,0 +1,265 @@
+/* ==========================================================================
+   KEERTHANA S R - PORTFOLIO RESPONSIVE STYLESHEET
+   Breakpoints: 1024px (Tablets / Small Desktops), 768px (Tablets / Mobile), 480px (Small Mobile)
+   ========================================================================== */
+
+/* --- Tablet & Medium Screens (<= 1024px) --- */
+@media screen and (max-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 56px;
+  }
+
+  .hero-content {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .tech-pills-row {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    order: 2;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .stats-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .education-card-main {
+    padding: 32px;
+  }
+
+  .edu-details-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-left .footer-tagline {
+    max-width: 100%;
+  }
+
+  .footer-right {
+    text-align: center;
+  }
+}
+
+/* --- Tablets & Mobiles (<= 768px) --- */
+@media screen and (max-width: 768px) {
+  .site-header {
+    padding: 12px 0;
+  }
+
+  /* Mobile Navigation Menu */
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .mobile-toggle.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+
+  .mobile-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-toggle.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 320px;
+    height: 100vh;
+    background: var(--bg-secondary);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-left: 1px solid var(--border-glass-hover);
+    padding: 100px 32px 40px;
+    transition: right var(--transition-normal);
+    z-index: 101;
+    box-shadow: -15px 0 35px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .nav-link {
+    font-size: 1.15rem;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  /* Hero Adjustments */
+  .hero-section {
+    padding: 120px 0 60px;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .typing-container {
+    font-size: 1.05rem;
+  }
+
+  .avatar-graphic-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .floating-badge {
+    padding: 6px 12px;
+    font-size: 0.72rem;
+  }
+
+  .badge-uvce {
+    left: -5px;
+    top: 5px;
+  }
+
+  .badge-python {
+    right: -10px;
+    top: 45px;
+  }
+
+  .badge-js {
+    left: -10px;
+    bottom: 60px;
+  }
+
+  /* Section Title */
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  /* Skills & Projects Grid */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stats Grid */
+  .stats-column {
+    grid-template-columns: 1fr;
+  }
+
+  /* Education Card */
+  .edu-crest-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .edu-year-badge {
+    margin-top: 8px;
+  }
+
+  /* Contact Section */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contact-info-card, .contact-form-card {
+    padding: 28px;
+  }
+
+  /* Modal */
+  .modal-content {
+    padding: 24px 20px;
+  }
+
+  .resume-contact-bar {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+/* --- Small Mobile Phones (<= 480px) --- */
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .about-card {
+    padding: 24px;
+  }
+
+  .education-card-main {
+    padding: 24px 18px;
+  }
+
+  .skill-card {
+    padding: 24px;
+  }
+
+  .project-card {
+    padding: 24px;
+  }
+
+  .terminal-body {
+    padding: 16px;
+    font-size: 0.8rem;
+  }
+
+  .term-input {
+    font-size: 0.8rem;
+  }
+}
